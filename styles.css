@@ -83,7 +83,7 @@
 }
 
 .menu ul li:first-child{
-    color: peru;
+    color: #70471E;
 }
 
 .header {
@@ -96,6 +96,7 @@
     @media (width <= 721px) {
     flex-direction: column;
     align-items: center;
+
     }
 
 }
@@ -130,19 +131,19 @@
     font-weight: 600;
     padding-top: 10px;
     padding-bottom: 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #3F474F;
 }
     
 .service-item p {
     font-size: 16px;
-    color: #777;
+    color: #505050;
 }
 
 .latest-work p {
     font-weight: 600;
     padding-top: 10px;
     padding-bottom: 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #515A65;
 }
 
 .blog-info p {
@@ -153,7 +154,7 @@
 .contact-header p {
     font-weight: 600;
     padding: 10px 0 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #3F474F;
 }
 
 .info-box p {
@@ -167,6 +168,7 @@
     text-align: right; 
     font-size: 12px;
     font-weight: bold;
+    color: #959595;
 
     @media (width <= 1024px) {
         display: none;
@@ -200,24 +202,29 @@
     margin-top: 10px;
 }
 
-.about button {
-    background-color: peru;
+.about a {
+    background-color: #66411B;
     font-size: 14px;
     font-weight: bold;
     width: 200px;
     height: 50px;
     text-transform: uppercase;
     color: white;
+    text-align: center;
     border: 0;
     margin-top: 20px;
     margin-bottom: 10%;
+    display: flex; /* Centrado con flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center
 }
 
-.header button {
+.header a {
     padding: 10px;
     border: 1px solid peru;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
     width: 20%;
     text-transform: uppercase;
 
@@ -230,25 +237,29 @@
     }
 }
 
-.contact-form button {
-    background-color: peru;
+.contact-form a {
+    background-color: #7C4F22;
     color: white;
     padding: 10px 20px;
     border: none;
     font-size: 14px;
-    margin-top: 30px;
-    align-self: flex-start;
-    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.header button:first-of-type {
-    background-color: peru;
+.header a:first-of-type {
+    background-color: #7C4F22;
     color: white;
 }
 
-.header button:last-of-type {
+.header a:last-of-type {
     background-color: white;
-    color: peru;
+    color: #70471E;
     border-width: 2px;
     font-weight: 600;
 }
@@ -280,7 +291,8 @@
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #3F474F
+
 }
 
 .about img {
@@ -313,14 +325,14 @@
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #515A65;
 }
 
 .testimonials > p:first-of-type {
     font-weight: 600;
     padding-top: 10px;
     padding-bottom: 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #3F474F;
  
 }
 
@@ -333,7 +345,7 @@
 .testimonials-item .content p {
     margin: 0;
     font-size: 14px;
-    color: grey;
+    color: #595959;
     font-weight: 600;
 }
 
@@ -346,7 +358,7 @@
 .testimonials-item .details p {
     margin: 0;
     font-size: 14px;
-    color: grey;
+    color: #595959;
     font-weight: 600;
     text-align: center;
 }
@@ -354,7 +366,7 @@
 .latest-blogs > p:first-of-type {
     font-weight: 600;
     padding: 10px 0 40px;
-    color: rgb(129 143 160 / 25500%);
+    color: #515A65;
 }
 
 .about article p:first-of-type {
@@ -364,7 +376,7 @@
 }
 
 .highlight {
-    color: peru;
+    color: #6F451E;
 }
 
 .about article {
@@ -406,7 +418,7 @@
         font-size: 14px;
     }
 
-    .about button {
+    .about a {
         width: 100%; 
     }
 
@@ -454,7 +466,7 @@
 }
 
 .info-list span {
-    color: #666;
+    color: #464646;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -825,7 +837,7 @@
 
 .date {
     position: absolute;
-    background-color: peru;
+    background-color: #7C4F22;
     color: white;
     padding: 5px 10px;
     font-size: 14px;
@@ -924,7 +936,6 @@
     background-color: transparent;
     font-size: 14px;
     color: #333;
-    outline: none;
     transition: border-bottom-color 0.3s;
 }
 
@@ -1101,4 +1112,31 @@
         width: 100%;
         max-width: 200px;
     }
+
+}
+
+.scroll-to-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7C4F22;
+    height: 40px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    @media (width <= 721px) {
+        display: none;
+        
+        }
+}
+
+.scroll-to-content:focus {
+     outline: 2px solid #ffcc00; 
+    outline-offset: 4px;
+    background-color: rgba(255, 204, 0, 0.2); 
+    border-radius: 4px; 
 }
